@@ -1,16 +1,22 @@
-def Multiply(num1, num2):
+def multiply(num1, num2):
   return (num1 * num2)
+
+def hourToMins(num1):
+  return num1/60
+
 def shopping():
   jeansPrice = 40
   amountPairs = 6
-
-  total = Multiply(jeansPrice, amountPairs)
+  
+  total = multiply(jeansPrice, amountPairs)
   print("total price is", total)
 def episodes():
   watched = 12
   time = 50
-  total = Multiply(watched, time)
+  timeInMins = hourToMins(time)
+  total = multiply(watched, time)
   print("episodes watched is", total)
+
 shopping()
 episodes()
 
