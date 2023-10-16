@@ -13,3 +13,8 @@ def shopping():
 def episodes():
   watched = 12
   time = 50
+  total = Multiply(watched, time)
+  print("episodes watched is", total)
+shopping()
+episodes()
+
